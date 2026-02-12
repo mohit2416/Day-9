@@ -43,6 +43,16 @@ const App = () => {
         fetchNote()
       })
     }
+
+    // function handelUpdateNote(noteID){
+    //   axios.patch("http://localhost:3000/api/notes/"+noteID,{
+    //    description = 
+    //   })
+    //   .then(res=>{
+    //     console.log(res.data)
+    //     fetchNote()
+    //   })
+    // }
   return (
     <>
 
@@ -58,6 +68,7 @@ const App = () => {
             <h1>{note.title}</h1>
             <p>{note.description}</p>
             <button onClick={()=>{handelDeleteNote(note._id)}}>Delete Note</button>
+            {/* <button onClick={()=>{handelUpdateNote(note._id)}}>Update Note</button> */}
           </div>
         })
         }
